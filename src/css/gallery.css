@@ -1,0 +1,28 @@
+@import url('./styles.css');
+@import url('simplelightbox/dist/simple-lightbox.min.css');
+
+.gallery {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 260px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 15px;
+}
+
+.gallery-item {
+  transition-duration: 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-link {
+  display: flex;
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 260px;
+  height: 150px;
+}

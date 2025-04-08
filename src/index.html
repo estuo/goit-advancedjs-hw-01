@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
-
-    <load src="./partials/footer.html" />
-
+    <ul
+      class="nav-list"
+      style="display: flex; flex-direction: column; gap: 15px; margin: auto"
+    >
+      <li class="nav-item">
+        <a class="nav-link" href="./1-gallery.html">— Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./2-form.html">— Form</a>
+      </li>
+    </ul>
     <script type="module" src="./main.js"></script>
   </body>
 </html>

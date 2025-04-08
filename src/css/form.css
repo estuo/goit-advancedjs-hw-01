@@ -1,0 +1,74 @@
+@import url('./styles.css');
+
+form,
+input,
+textarea,
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5rem;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 1);
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 24px;
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+}
+
+form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-field {
+  padding-left: 16px;
+  border: 1px solid rgba(128, 128, 128, 1);
+  border-radius: 4px;
+  transition-duration: 250ms;
+  box-sizing: border-box;
+}
+
+.input-field:hover {
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: rgba(128, 128, 128, 1);
+}
+
+.input-email {
+  width: 360px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.field-message {
+  box-sizing: border-box;
+  width: 360px;
+  height: 80px;
+  margin-bottom: 16px;
+  resize: none;
+}
+
+.btn-submit {
+  background-color: rgba(78, 117, 255, 1);
+  border-radius: 8px;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  min-width: 95px;
+  min-height: 40px;
+  font-weight: 500;
+  transition-duration: 250ms;
+}
+
+.btn-submit:hover {
+  background-color: rgba(108, 140, 255, 1);
+}
